@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        
+
+        // arrays that will be sorted through
+        var arr1 = [ 1, 2, 3 ];
+        var arr2 = [ 3, 6, 4, 5, 2, 1];
+        var arr3 = [ 3, 3, 3];
+
+        // function that accepts an array and iterates 
+        // through the whole array seaching for max value
+        function findMaxValue(arr) {
+            // variable to store max value
+            var max = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        console.log(findMaxValue(arr1));
+        console.log(findMaxValue(arr2));
+        console.log(findMaxValue(arr3));
+    </script>
+</body>
+
+</html>
